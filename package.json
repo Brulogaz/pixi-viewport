@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidfig/pixi-viewport.git"
+    "url": "git+https://github.com/brulogaz/pixi-viewport.git"
   },
   "keywords": [
     "PIXI",
@@ -31,9 +31,9 @@
   "author": "David Figatner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davidfig/pixi-viewport/issues"
+    "url": "https://github.com/brulogaz/pixi-viewport/issues"
   },
-  "homepage": "https://github.com/davidfig/pixi-viewport#readme",
+  "homepage": "https://github.com/brulogaz/pixi-viewport#readme",
   "peerDependencies": {
     "pixi.js": ">=4.6.0"
   },
