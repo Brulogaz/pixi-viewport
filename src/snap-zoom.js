@@ -54,6 +54,8 @@ module.exports = class SnapZoom extends Plugin
                 this.parent.removePlugin('snap-zoom')
             }
         }
+        this.x_scale = Math.round(this.x_scale*10)/10
+        this.y_scale = Math.round(this.y_scale*10)/10
     }
 
     resize()
@@ -70,6 +72,9 @@ module.exports = class SnapZoom extends Plugin
         }
         this.x_scale = this.xIndependent ? this.x_scale : this.y_scale
         this.y_scale = this.yIndependent ? this.y_scale : this.x_scale
+
+        this.x_scale = Math.round(this.x_scale*10)/10
+        this.y_scale = Math.round(this.y_scale*10)/10
     }
 
     reset()

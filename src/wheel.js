@@ -61,6 +61,8 @@ module.exports = class Wheel extends Plugin
             this.parent.x += point.x - newPoint.x
             this.parent.y += point.y - newPoint.y
         }
+        this.parent.x = Math.round(this.parent.x*10)/10
+        this.parent.y = Math.round(this.parent.y*10)/10
         e.preventDefault()
         this.parent.emit('wheel', { wheel: { dx: e.deltaX, dy: e.deltaY, dz: e.deltaZ }, event: e, viewport: this.parent})
     }
